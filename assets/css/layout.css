@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    text-align: center;
+    background-image:linear-gradient(to right,rgb(186, 65, 65),rgb(33, 2, 2),rgb(4, 4, 57));
+}
+
+h1{
+    color: white;
+}
+header,footer{
+    color: wheat;
+    font-size: 20px;
+}
