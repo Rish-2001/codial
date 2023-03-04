@@ -1,4 +1,4 @@
-<h1>Sign in</h1>
+<!-- <h1>Sign in</h1>
 <form action="/users/create-session" method="POST">
 
     <input type="text" name="email" placeholder="Your Email" required>
@@ -8,4 +8,25 @@
     <input type="submit" value="Sign In">
 
 
+</form> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+<link rel="stylesheet" href="/css/sign-in.css">
+<div class="form">
+    <h2>Login here</h2>
+    <form action="/users/create-session" method="POST">
+    <input type="email"name="email"placeholder="Enter Email here">
+    <input type="password"name="password"placeholder="Enter password here">
+<button class="btnn">SIGN IN</button>
+<p class="link">Don't have an account</br>
+<a href="/users/sign-up" class="rk">Sign up</a> here</p>
+<p class="liw">log in up with</p>
+<div class="icon-bar">
+<a href="http://facebook.com" class="icon"><i class="fa fa-facebook"></i></a> 
+<a href="http://twitter.com" class="icon"><i class="fa fa-twitter"></i></a> 
+<a href="http://google.com" class="icon"><i class="fa fa-google"></i></a> 
+<a href="http://linkedin.com" class="icon"><i class="fa fa-linkedin"></i></a>
+<a href="http://youtube.com" class="icon"><i class="fa fa-youtube"></i></a>
+
 </form>
+</div>
