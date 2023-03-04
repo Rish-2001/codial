@@ -17,5 +17,6 @@ router.get('/',homeController.home);
 //to access the user controller which is present in user.js 
 router.use('/users',require('./users'));
 
+router.use('/posts',require('./posts'));
 
 module.exports=router;
