@@ -12,7 +12,7 @@ module.exports.create = function(req, res){
             }, function(err, comment){
                 // handle error
 
-                // post.comments.push(comment);
+                post.comments.push(comment);
                 post.save();
 
                 res.redirect('/');
