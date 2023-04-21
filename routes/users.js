@@ -8,7 +8,7 @@ const userController=require('../controllers/user_controller');
 
 
 //to access the profile page using router function
-router.get('/profile',passport.checkAuthentication,userController.profile);
+router.get('/profile/:id',passport.checkAuthentication,userController.profile);
 
 router.get('/sign-up',userController.signUp);
 
