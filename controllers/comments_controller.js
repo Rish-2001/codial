@@ -42,12 +42,12 @@ module.exports.create = async function(req, res){
     
                 post.comments.push(comment);
                 post.save();
-      
+                Comment=await comment.populate('user','name email').execPopulate();
                 commentMailer.newComment(comment);
                 
                 
                 if(req.xhr){
-                    Comment=await comment.populate('user','name email').execPopulate();
+                   
 
                     return res.status(200).json({
                         data:{
