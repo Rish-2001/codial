@@ -2,7 +2,7 @@
 
  
     <p>
-        <%if (locals.user && locals.user.id==comment.user.id){%>
+        <%if (locals.user &&  comment.user && locals.user.id==comment.user.id){%>
 
             <small>
                 <a href="/comments/destroy/<%=comment.id %>">x</a>
@@ -11,9 +11,12 @@
             <%}%>
         <%=comment.content%>
         <br>
-        <small>
-            <%=comment.user.name%>
-        </small>
+        <% if (comment.user) { %>
+            <small>
+                <%= comment.user.name %>
+            </small>
+        <% } %>
+        
     </p>
 
    </li> 
