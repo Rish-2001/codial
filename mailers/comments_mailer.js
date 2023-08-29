@@ -1,23 +1,23 @@
-const nodeMailer=require('../config/nodemailer');
+// const nodeMailer=require('../config/nodemailer');
 
-//this is way another way of exporting a method
+// //this is way another way of exporting a method
 
-exports.newComment=(comment)=>{
+// exports.newComment=(comment)=>{
   
-    console.log('inside newcomment mailer');
+//     console.log('inside newcomment mailer',comment);
 
-    nodeMailer.transporter.sendMail({
-        from:'codial.com',
-        to:comment.user.email,
-        subject:"new comment publish",
-        html:'<h1>Yup,Your comment is now published </h1>'
-    },(err,info)=>{
-        if(err){
-            console.log('Error in sending the mail',err);
-            return;
-        }
-        console.log('Message sent',info);
-        return;
-    })
-}
+//     nodeMailer.transporter.sendMail({
+//         from:'rk1864951@gmail.com',
+//         to:comment.user.email,
+//         subject:"new comment publish",
+//         html:'<h1>Yup,Your comment is now published </h1>'
+//     },(err,info)=>{
+//         if(err){
+//             console.log('Error in sending the mail',err);
+//             return;
+//         }
+//         console.log('Message sent',info);
+//         return;
+//     })
+// }
 

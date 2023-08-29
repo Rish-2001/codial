@@ -1,6 +1,6 @@
 const Comment = require('../models/comment');
 const Post = require('../models/post');
-const commentMailer=require('../mailers/comment_mailer');
+const commentMailer=require('../mailers/comments_mailer');
 module.exports.create = async function(req, res){
     
     
